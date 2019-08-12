@@ -1,0 +1,92 @@
+button {
+  cursor: pointer;
+}
+.button_primary {
+  color: $white;
+  border: none;
+  background-color: $blue-primary;
+  font-family: "Century Gothic";
+  text-transform: uppercase;
+  min-width: 130px;
+  height: 40px;
+  position: relative;
+  font-size: 16px;
+  margin-right: 10px;
+  position: relative;
+  outline: none;
+}
+.button_primary::after {
+  content: "";
+  position: absolute;
+  right: -26px;
+  bottom: 0;
+  border: 16px solid transparent;
+  border-top: 24px solid $blue-primary;
+  border-left: 10px solid $blue-primary;
+}
+
+.button_form {
+  background-color: $black;
+  border: none;
+  border-radius: 50px;
+  color: $white;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 180px;
+  padding: 10px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
+}
+
+.secondary_button{
+  width: 130px;
+  height: 40px;
+  font-size: 16px;
+  margin-right: 10px;
+  position: relative;
+  outline: none;
+}
+
+.yellow_button{
+  color: $white;
+  border: none;
+  background-color: $yellow-primary;
+  font-family: "Impact";
+  text-transform: uppercase;
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  position: relative;
+  outline: none;
+}
+.yellow_button::after {
+  content: "";
+  position: absolute;
+  right: -26px;
+  bottom: 0;
+  border: 16px solid transparent;
+  border-top: 24px solid $yellow-primary;
+  border-left: 10px solid $yellow-primary;
+}
+
+.blue_button{
+  color: $white;
+  border: none;
+  background-color: $blue-secondary;
+  font-family: "Impact";
+  text-transform: uppercase;
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  position: relative;
+  outline: none;
+}
+.blue_button::after {
+  content: "";
+  position: absolute;
+  right: -26px;
+  bottom: 0;
+  border: 16px solid transparent;
+  border-top: 24px solid $blue-secondary;
+  border-left: 10px solid $blue-secondary;
+}

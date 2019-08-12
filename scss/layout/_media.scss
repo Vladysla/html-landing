@@ -1,0 +1,328 @@
+
+ // Mobile
+
+@media (min-width: 375px) and (max-width: 768px) {
+  .body {
+    & .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 50px 0;
+      & .about_section {
+        width: 90%;
+        & .title {
+          padding: 0;
+          text-align: center;
+        }
+        & .main_title {
+          text-align: center;
+        }
+        & .more_info {
+          margin: auto;
+        }
+      }
+      & .image_block {
+        margin: 25px auto 0;
+        & img {
+          margin: 10px 10px 0 0;
+          width: 310px;
+          height: 310px;
+        }
+      }
+    }
+    & .section:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      & .image_block {
+        & img {
+          margin: 10px 10px 0 10px;
+        }
+      }
+    }
+    & .mortgage {
+      width: 90%;
+      & .button_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        & button {
+          margin: 5px 0;
+        }
+      }
+    }
+    & .section:nth-child(4) {
+      flex-direction: column;
+      & .news {
+        width: 90%;
+        & .main_title {
+          width: 150px;
+        }
+        & .news-list {
+          padding: 10px 20px;
+          & div {
+            margin: 10px 0;
+          }
+        }
+      }
+      & .feedback {
+        width: 300px;
+        padding: 20px 20px;
+        & .main_title {
+          text-align: center;
+        }
+        & .comments_wrapper {
+          & .comment {
+            width: 300px;
+          }
+        }
+      }
+    }
+    & .section:nth-child(5) {
+      width: 90%;
+      & .container {
+        width: 350px;
+        margin: auto;
+        & .info_container {
+          width: 310px;
+          margin: 10px auto 10px;
+          padding: 70px 10px 20px;
+          & .sub_menu {
+            padding: 30px 20px 10px;
+          }
+        }
+      }
+      & img {
+        width: 310px;
+        height: 310px;
+      }
+    }
+  }
+  .header {
+    .header_top .header_logo {
+      img {
+        max-width: 100px;
+      }
+    }
+  }
+}
+
+ // Tablet
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .body {
+    & .section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+      padding: 50px 0;
+      & .about_section {
+        width: 55%;
+        justify-content: space-between;
+        & .title {
+          padding-left: 70px;
+        }
+      }
+      & .image_block {
+        margin: 0;
+        & img {
+          margin: 10px 10px 0 20px;
+          width: 350px;
+          height: 350px;
+        }
+      }
+    }
+    & .section:nth-child(2) {
+      display: flex;
+      flex-direction: row-reverse;
+      & .image_block {
+        & img {
+          margin: 10px 30px 0 10px;
+          width: 350px;
+          height: 350px;
+        }
+      }
+    }
+    & .mortgage {
+      width: 80%;
+      & .button_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        & button {
+          margin: 0 20px;
+        }
+      }
+    }
+    & .section:nth-child(4) {
+      flex-direction: row;
+      justify-content: space-between;
+      & .news {
+        width: 55%;
+        & .main_title {
+          width: 145px;
+        }
+        & .news-list {
+          padding: 30px;
+          & div {
+            margin: 10px 0;
+          }
+        }
+      }
+      & .feedback {
+        width: 370px;
+        padding: 20px 30px;
+        & .comments_wrapper {
+          & .comment {
+            width: 340px;
+          }
+        }
+      }
+    }
+    & .section:nth-child(5) {
+      width: 80%;
+      & .container {
+        width: 40%;
+        & .info_container {
+          & .sub_menu {
+            padding: 40px 40px 10px;
+          }
+        }
+      }
+      & img {
+        width: 375px;
+        height: 375px;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+ // Desktop
+
+@media screen and (min-width: 1025px) {
+  .header {
+    .header_logo {
+      img {
+        max-width: 200px;
+      }
+    }
+    .nav_list {
+      font-size: 14px;
+      li {
+        margin-left: 15px;
+        &:after {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+  .body {
+    & .section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 70%;
+      padding: 50px 0;
+      & .about_section {
+        width: 55%;
+        justify-content: space-between;
+        & .title {
+          padding-left: 70px;
+        }
+      }
+      & .image_block {
+        margin: 0;
+        & img {
+          margin: 10px 10px 0 20px;
+          width: 370px;
+          height: 370px;
+        }
+      }
+    }
+    & .section:nth-child(2) {
+      display: flex;
+      flex-direction: row-reverse;
+      & .image_block {
+        & img {
+          margin: 10px 0 0 10px;
+        }
+      }
+    }
+    & .mortgage {
+      width: 70%;
+      & .button_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        & button {
+          margin: 0 20px;
+        }
+      }
+    }
+    & .section:nth-child(4) {
+      flex-direction: row;
+      justify-content: space-between;
+      & .news {
+        width: 55%;
+        & .main_title {
+          width: 150px;
+        }
+        & .news-list {
+          padding: 30px;
+          & div {
+            margin: 10px 0;
+          }
+        }
+      }
+      & .feedback {
+        width: 400px;
+      }
+    }
+    & .section:nth-child(5) {
+      width: 70%;
+      & .container {
+        width: 40%;
+        & .info_container {
+          & .sub_menu {
+            padding: 40px 30px 10px;
+          }
+        }
+      }
+      & img {
+        width: 375px;
+        height: 375px;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .header {
+    .header_logo {
+      img {
+        max-width: 150px;
+      }
+    }
+    .nav_list {
+      font-size: 12px;
+      li {
+        margin-left: 5px;
+        &:after {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header .header_nav .nav_list {
+    display: none;
+  }
+}
