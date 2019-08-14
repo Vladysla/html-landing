@@ -306,7 +306,7 @@ i.down {
 
 .header {
   position: relative;
-  background: url("../templates/images/header-main-bg.jpg") no-repeat center center;
+  background: url("../assets/images/header-main-bg.jpg") no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 850px;
