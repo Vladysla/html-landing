@@ -49,5 +49,5 @@ gulp.task('prebuild', async function() {
   .pipe(gulp.dest('dist'));
 });
 
-gulp.task('build', gulp.parallel('scss', 'prebuild', 'clean'));
+gulp.task('build', gulp.parallel('clean', 'scss', 'prebuild'));
 gulp.task('default', gulp.parallel('scss', 'browser-sync', 'watch'));
