@@ -1,0 +1,322 @@
+body {
+  background: linear-gradient(180deg,  $grey, $white);
+  margin: auto;
+}
+.body {
+  padding-top: 100px;
+  & .section {
+    font-family: "Arial Narrow";
+    margin: auto;
+    padding: 50px 0;
+    & .about_section {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      & .title {
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-size: 12px;
+        font-weight: 600;
+        color: $grey-secondary;
+      }
+      & .main_title {
+        text-transform: uppercase;
+        font-size: 26px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-family: Impact;
+        padding: 10px 0 30px;
+      }
+      & .short_desc {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: .5px;
+        padding-bottom: 10px;
+      }
+      & .description {
+        font-size: 15px;
+        font-weight: 500;
+        padding-bottom: 30px;
+        line-height: 1.5;
+      }
+      & .more_info {
+        background: transparent;
+        border: 1px solid $black;
+        font-size: 14px;
+        font-weight: 500;
+        width: 120px;
+        height: 30px;
+        margin-bottom: 10px;
+        padding: 5px;
+        text-transform: uppercase;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+    & .image_block {
+      position: relative;
+      z-index: 0;
+      & div:last-child {
+        background: linear-gradient(90deg,  $yellow-primary, $yellow-secondary);
+        position: absolute;
+        width: 200px;
+        height: 40px;
+        top: 0;
+        right: 0;
+        z-index: -1;
+      }
+      & img {
+        z-index: 1;
+      }
+    }
+  }
+  & .section:nth-child(2) {
+    & .image_block {
+      & div:last-child {
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  & .mortgage {
+    margin: 50px auto 0;
+    & .main_title {
+      font-size: 26px;
+      font-weight: 700;
+      font-family: Impact;
+      letter-spacing: 1.5px;
+      & div {
+        background-color: $yellow-secondary;
+        width: 150px;
+        height: 3px;
+        margin: 10px 0;
+      }
+    }
+    & .description {
+      padding-top: 10px;
+      line-height: 1.7;
+      font-size: 15px;
+      font-weight: 500;
+      font-family: "Arial Narrow";
+    }
+    & .button_wrapper {
+      & button {
+        letter-spacing: .5px;
+        cursor: pointer;
+      }
+    }
+  }
+  & .section:nth-child(4) {
+    display: flex;
+    align-items: center;
+    & .news {
+      & .main_title {
+        text-transform: capitalize;
+        font-family: Impact;
+        letter-spacing: 1.5px;
+        font-size: 24px;
+        font-weight: 700;
+        padding-bottom: 10px;
+        border-bottom: 3px solid $grey-third;
+      }
+      & .news-list {
+        & div {
+          display: flex;
+          align-items: center;
+          opacity: 0.7;
+          & img {
+            width: 60px;
+            height: 60px;
+            padding-right: 20px;
+            opacity: 0.5;
+          }
+          & div {
+            line-height: 1.5;
+          }
+        }
+        & div:first-child {
+          opacity: 1;
+          & img {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    & .feedback {
+      background-color: $yellow-primary;
+      padding: 20px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: "Futura PT";
+      position: relative;
+      & .main_title {
+        color: $white;
+        font-size: 26px;
+        padding: 10px 0;
+      }
+      & .comments_wrapper {
+        display: flex;
+        flex-direction: row;
+        & .comment {
+          width: 400px;
+          & > img {
+            width: 80px;
+            height: 80px;
+            padding: 10px 0;
+          }
+          & .description {
+            color: $white;
+            line-height: 1.5;
+            font-size: 16px;
+            padding: 10px 0;
+            height: 100px;
+            overflow: hidden;
+          }
+          & .rate {
+            display: flex;
+            & svg {
+              height: 20px;
+              width: 20px;
+              padding-left: 2px;
+              &:last-child {
+                fill: $white;
+              }
+            }
+          }
+          & .person_id {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            & div:first-child {
+              color: $white;
+              line-height: 1.5;
+            }
+          }
+        }
+        & .slide {
+          animation-name: slide;
+          animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes slide {
+          from {
+            margin-left: 50%;
+            opacity: .5;
+          }
+
+          to {
+            margin-left: 0;
+            opacity: 1;
+          }
+        }
+
+
+        @keyframes slide {
+          from {
+            margin-left: 50%;
+            opacity: .5;
+          }
+          to {
+            margin-left: 0;
+            opacity: 1;
+          }
+        }
+      }
+      & .slider {
+        display: flex;
+        position: absolute;
+        bottom: 50px;
+        right: 20px;
+        & .dot {
+          height: 5px;
+          width: 25px;
+          margin: 0 2px;
+          background-color: $white;
+          display: block;
+          cursor: pointer;
+          &:hover {
+            background-color: $black;
+          }
+        }
+        & .active {
+          background-color: $black;
+        }
+      }
+    }
+  }
+  & .section:nth-child(5) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    & .container {
+      position: relative;
+      z-index: 0;
+      width: 40%;
+      margin: 0;
+      & span {
+        background: linear-gradient(90deg,  $yellow-primary, $yellow-secondary);
+        position: absolute;
+        width: 200px;
+        height: 40px;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+      & .info_container {
+        background-color: $grey-third;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 70px 20px 20px;
+        margin: 10px 0 0 10px;
+        z-index: 1;
+        & .title {
+          text-transform: capitalize;
+          font-weight: 500;
+          font-family: "Futura PT";
+          font-size: 26px;
+          padding-bottom: 15px;
+        }
+        & .description {
+          font-size: 15px;
+          line-height: 1.5;
+          font-family: "Futura PT";
+          font-style: normal;
+        }
+        & .sub_menu {
+          padding: 40px 40px 10px;
+          & .menu {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            letter-spacing: .7px;
+            font-family: Impact;
+            padding: 15px 0;
+            opacity: 0.7;
+            & div:first-child {
+              color: $black;
+              width: 170px;
+              font-weight: 600;
+            }
+            & img {
+              height: 15px;
+              width: 25px;
+            }
+          }
+          & :hover {
+             opacity: 1;
+          }
+        }
+      }
+    }
+    & img {
+      width: 375px;
+      height: 375px;
+      padding: 0 10px;
+    }
+  }
+}
