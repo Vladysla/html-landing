@@ -8,6 +8,7 @@ body {
     font-family: "Arial Narrow";
     margin: auto;
     padding: 50px 0;
+    max-width: 1110px;
     & .about_section {
       display: flex;
       flex-direction: column;
@@ -81,6 +82,7 @@ body {
   }
   & .mortgage {
     margin: 50px auto 0;
+    max-width: 1110px;
     & .main_title {
       font-size: 26px;
       font-weight: 700;
